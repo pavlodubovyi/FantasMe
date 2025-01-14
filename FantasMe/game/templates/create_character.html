@@ -1,0 +1,14 @@
+<h1>Create Your Character</h1>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="id_name">Name:</label>
+    {{ form.name }}
+    <br>
+    <label for="id_character_class">Character class:</label>
+    {{ form.character_class }}
+    <br>
+    <label for="id_face">Face:</label>
+    {{ form.face }}
+    <br>
+    <button type="submit">Create</button>
+</form>
